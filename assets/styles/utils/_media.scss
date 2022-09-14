@@ -1,0 +1,30 @@
+/* Breakpoints */
+@mixin laptop{
+    @media screen and (max-width: map-get(var.$breakpoints,"laptop")){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width: map-get(var.$breakpoints,"tablet")){
+        @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: map-get(var.$breakpoints,"mobile")){
+        @content;
+    }
+}
+
+@mixin m-mobile{
+    @media screen and (max-width: map-get(var.$breakpoints,"m-mobile")){
+        @content;
+    }
+}
+@mixin s-mobile{
+    @media screen and (max-width: map-get(var.$breakpoints,"s-mobile")){
+        @content;
+    }
+}
+
+/* End of Breakpoints */

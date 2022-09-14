@@ -1,10 +1,151 @@
 @use 'variables' as var;
-/* p{
-    color: var.$mycolor;
-} */
+@use '../base/' as base;
 
-@mixin roboto-16 {
-    font-family: var.$roboto;
+
+/* Font-SIZE */
+@mixin nunito-12 {
+    font-family: var.$nunito;
+    font-size: 12px;
+    
+}
+@mixin nunito-12-8 {
+    font-family: var.$nunito;
+    font-size: 12.8px;
+    
+}
+@mixin nunito-13 {
+    font-family: var.$nunito;
+    font-size: 13px;
+    
+}
+@mixin nunito-14 {
+    font-family: var.$nunito;
+    font-size: 14px;
+    
+}
+@mixin nunito-16 {
+    font-family: var.$nunito;
     font-size: 16px;
     
 }
+@mixin nunito-18 {
+    font-family: var.$nunito;
+    font-size: 18px;
+    
+}
+@mixin nunito-20 {
+    font-family: var.$nunito;
+    font-size: 20px;
+    
+}
+@mixin nunito-24 {
+    font-family: var.$nunito;
+    font-size: 24px;
+    
+}
+@mixin nunito-26 {
+    font-family: var.$nunito;
+    font-size: 26px;
+    
+}
+@mixin nunito-30 {
+    font-family: var.$nunito;
+    font-size: 30px;
+    
+}
+@mixin nunito-38 {
+    font-family: var.$nunito;
+    font-size: 38px;
+    
+}
+@mixin nunito-115-2 {
+    font-family: var.$nunito;
+    font-size: 115.2px;
+    
+}
+
+/* End of Font-size */
+
+
+/* Flex-box */
+
+@mixin row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin row-between2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+@mixin row-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin row-around2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@mixin row-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+@mixin row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+@mixin flex-col-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin column-wrap{
+    display: flex;
+    flex-flow: column wrap;
+}
+@mixin row-wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin for-drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+/* End of Flex-box */

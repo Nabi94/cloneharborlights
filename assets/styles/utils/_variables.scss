@@ -1,4 +1,29 @@
+/* Font */
+$nunito:"Nunito sans",Arial,sans-serif;
+/* End of Font */
 
-$roboto:'Roboto';
 
-$mycolor:green;
+/* Colors */
+$white:#ffffff; //text hover
+$yellow:#f5e4c3;//text
+$green:#21cc7a; //button,hover card
+$black:#000000; //button hover
+$gray:#999999;//text
+$blue:#2f89fc; //button hover
+$opacity-white:#ffffffb3; //button hover
+$opacity-black:#0000004D; // text
+/* End of Colors */
+
+
+/* BreakPoints */
+
+$breakpoints:(
+    "laptop":1024px,
+    "tablet":768px,
+    "mobile":480px,
+    "m-mobile":375px,
+    "s-mobile":320px
+)
+
+
+/* End of Breakpoints */
