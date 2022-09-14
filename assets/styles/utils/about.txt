@@ -1,0 +1,2 @@
+Helper functions and non–output snippets only (font-face imports, reusable mixins, global variables, colors, etc.);
+The /abstracts folder contains all the sass helpers you can create to help you out on your project. This is all about sass tools, variables, mixins, functions, placeholders, etc.

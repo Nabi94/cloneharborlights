@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Black.ttf");
+  font-weight: 900;
+}
+/* Normalize for site */
+/* Reset for Site */
+/* Fonts from google fonts or other sites */
+/*  */
+/* p{
+    color: var.$mycolor;
+} */
+/* FOLDER STRUCTURE */
+/* Normalize,Reset,Typography,Utilities */
+/* Animations,Buttons,Card,Carousel,Cover,Dropdown,Form,Slider,Tables,Tooltips, */
+/* Footer,Forms,Grid,Header,Navigation,Sidebar */
+/* About,Contact,Home */
+/* Admin,Theme */
+/* Colors,Fonts,Media,Mixins,Placeholders,Variables,Z-index */
+/* Bootstrap,FontAwesome,Jquery-UI */
+/* End of FOLDER STRUCTURE */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* End of RESET *//*# sourceMappingURL=main.css.map */

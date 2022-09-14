@@ -1,0 +1,21 @@
+/* FOLDER STRUCTURE */
+@use 'base/' as base;/* Normalize,Reset,Typography,Utilities */
+@use 'components/' as componenets;/* Animations,Buttons,Card,Carousel,Cover,Dropdown,Form,Slider,Tables,Tooltips, */
+@use 'layout/' as layout;/* Footer,Forms,Grid,Header,Navigation,Sidebar */
+@use 'pages/' as pages;/* About,Contact,Home */
+@use 'themes/' as themes;/* Admin,Theme */
+@use 'utils/' as utils;/* Colors,Fonts,Media,Mixins,Placeholders,Variables,Z-index */
+@use 'vendors/' as vendors;/* Bootstrap,FontAwesome,Jquery-UI */
+/* End of FOLDER STRUCTURE */
+
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End of RESET */
+
+

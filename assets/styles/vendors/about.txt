@@ -1,0 +1,2 @@
+All 3rd-party vendor tools (frameworks, libraries, helpers) should be separated into folders;
+contains all third party code from external libraries and frameworks — such as Normalize, Bootstrap, jQueryUI, etc. 
