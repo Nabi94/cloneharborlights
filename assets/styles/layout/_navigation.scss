@@ -1,1 +1,37 @@
 @use '../utils/' as utils;
+
+/* Navigation */
+.header{
+    transition: .5s all;
+    &__nav-list{
+        @include utils.flex-row;
+    }
+    &__nav-item{
+        padding: 14.4px 20px;
+        list-style-type: none;
+    }
+    &__nav-link{
+        @include utils.nunito-14;
+        text-decoration: none;
+        color: utils.$var-black;
+        font-weight: 600;
+    }
+}
+
+
+
+.active{
+    color: utils.$var-green;
+}
+.active2{
+    background-color: utils.$var-white;
+    position: fixed;
+    color: utils.$var-black !important;
+    top: 0;
+    transition: .5s all;
+    
+
+}
+
+
+/* End of Navigation */

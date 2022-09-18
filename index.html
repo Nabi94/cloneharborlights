@@ -5,15 +5,307 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/styles/dist/main.css" />
     <title>Harborlights - Free Bootstrap 4 Template by Colorlib</title>
   </head>
 
   <body>
-    <span class="flaticon-reception-bell"></span>
-    <i class='fi fi-rr-angle-left'></i>
-    <i class="flaticon-reception-bell"></i>
+    <!-- Loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+    <!-- End of Loader -->
 
+    <!-- Header -->
+
+    <header class="header" id="header">
+      <div class="container">
+        <a href="index.html" class="header__logo-link"
+          >Harbor<span>lights</span>
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="index.html" class="header__nav-link active">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="ourrooms.html" class="header__nav-link">Our Rooms</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Restaurant</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">About us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Blog</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="contact.html" class="header__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- End of Header -->
+
+    <!-- Main -->
+    <main>
+      <!-- Slider -->
+      <section
+        class="slider"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="800"
+      >
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="slider__text">
+                    <h2>More than a hotel... an experience</h2>
+                    <h1>Hotel for the whole family, all year round.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img2">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="slider__text">
+                    <h2>Harbor Lights Hotel & Resort</h2>
+                    <h1>It feels like staying in your own home.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- End of Slider -->
+
+      <!-- Check -->
+      <section
+        class="check"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="800"
+      >
+        <div class="container">
+          <div class="check__form">
+            <div class="check__in">
+              <label for="#">Check-in Date</label>
+              <input type="text" id="datapicker" placeholder="Check in Date" />
+            </div>
+            <div class="check__out">
+              <label for="#">Check-out Date</label>
+              <input type="text" id="datapicker" placeholder="Check out Date" />
+            </div>
+            <div class="check__room1">
+              <label for="#">Room</label>
+              <div class="check__section-room">
+                <select name="#" id="#">
+                  <option value="Suite">Suite</option>
+                  <option value="Family Room">Family Room</option>
+                  <option value="Deluxe Room">Deluxe Room</option>
+                  <option value="Classic Room">Classic Room</option>
+                  <option value="Superior Room">Superior Room</option>
+                  <option value="Luxury Room">Luxury Room</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="check__room2">
+              <label for="#">Guests</label>
+              <div class="check__section-room">
+                <select name="#" id="#">
+                  <option value="1 Adult">1 Adult</option>
+                  <option value="2 Adult">2 Adult</option>
+                  <option value="3 Adult">3 Adult</option>
+                  <option value="4 Adult">4 Adult</option>
+                  <option value="5 Adult">5 Adult</option>
+                  <option value="6 Adult">6 Adult</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="check__button">
+              <a href="#" class="check__btn">
+                <span>Check Availability</span>
+                <small>Best Price Guaranteed!</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Check -->
+      <!-- Hotel Services -->
+
+      <section
+        class="hotel"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="800"
+      >
+        <div class="container">
+          <div class="hotel__description">
+            <p class="hotel__subheading">Welcome to Harbor Lights Hotel</p>
+            <h2 class="hotel__title">You'll Never Want To Leave</h2>
+          </div>
+          <div class="hotel__cards">
+            <!-- Card 1 -->
+            <div class="hotel__card">
+              <div class="hotel__card-icon">
+                <i class="fa-solid fa-bell-concierge"></i>
+              </div>
+              <div class="hotel__card-name">
+                <p class="hotel__card-subtitle">Friendly Service</p>
+              </div>
+            </div>
+            <!-- End of Card 1 -->
+            <!-- Card 2 -->
+            <div class="hotel__card">
+              <div class="hotel__card-icon">
+                <i class="fa-solid fa-disease"></i>
+              </div>
+              <div class="hotel__card-name">
+                <p class="hotel__card-subtitle">Get Breakfast</p>
+              </div>
+            </div>
+            <!-- End of Card 2 -->
+            <!-- Card 3 -->
+            <div class="hotel__card">
+              <div class="hotel__card-icon">
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <div class="hotel__card-name">
+                <p class="hotel__card-subtitle">Transfer Services</p>
+              </div>
+            </div>
+            <!-- End of Card 3 -->
+            <!-- Card 4 -->
+            <div class="hotel__card">
+              <div class="hotel__card-icon">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+              <div class="hotel__card-name">
+                <p class="hotel__card-subtitle">Suits & SPA</p>
+              </div>
+            </div>
+            <!-- End of Card 4 -->
+            <!-- Card 5 -->
+            <div class="hotel__card">
+              <div class="hotel__card-icon">
+                <i class="fa-solid fa-bed"></i>
+              </div>
+              <div class="hotel__card-name">
+                <p class="hotel__card-subtitle">Cozy Rooms</p>
+              </div>
+            </div>
+            <!-- End of Card 5 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Hotel Services -->
+
+      <!-- About -->
+
+      <section class="about"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="800">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__left">
+              <p class="about__subheading">About Harbor Lights Hotel</p>
+              <h2 class="about__title">
+                Harbor Lights Hotel the Most Recommended Hotel All Over the
+                World
+              </h2>
+              <p class="about__description">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean.
+              </p>
+              <div class="about__left-button">
+              <a href="#" class="about__left-btn">Reserve Your Room Now</a>
+            </div>
+            </div>
+            <div class="about__right">
+              <div class="about__right-img">
+                <img src="assets/images/xabout-1.jpg.pagespeed.ic.SwqUaT2nvZ.webp" alt="">
+              </div>
+              <div class="about__right-img">
+                <img src="assets/images/xabout-2.jpg.pagespeed.ic.vPMrjE2CSf.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of About -->
+    </main>
+
+    <!-- End of Main -->
+
+    <script
+      src="https://kit.fontawesome.com/ab0bde7d2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

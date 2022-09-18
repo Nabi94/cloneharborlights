@@ -1,7 +1,411 @@
-@use '../utils/' as utils;
+@use "../utils/" as utils;
 
+/* Slider Hero */
+.slider{
+    .swiper{
+        width: 100%;
+        height: 800px;
+    }
+   
+    .swiper-img{
+        background-image: url('../../images/xbg_1.jpg.pagespeed.ic.54ihelhogj.webp');
+        height: 800px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+    }
+    .swiper-img2{
+        background-image: url('../../images/xbg_2.jpg.pagespeed.ic.cOwhRzE9dH.webp');
+        height: 800px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: utils.$var-blue;
+        opacity: .6;
 
+    }
+    .container{
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        @include utils.column-flex-end;
+    }
+    &__text{
+        width: 555px;
+        height: 580px;
+        position: relative;
+        top: 150px;
+        z-index: 22;
 
-.mysalam{
-    color: utils.$var-blue;
+        h2{
+            @include utils.nunito-16;
+            color: utils.$var-yellow;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        h1{
+            @include utils.nunito-115-2;
+            font-weight: 700;
+            color: utils.$var-white;
+            margin: 0;
+            line-height: 1;
+        }
+
+    }
+    
 }
+
+
+
+/* End of Hero */
+
+
+/* Check */
+.check{
+    width: 100%;
+    height: 154px;
+    background: utils.$var-white2;
+    .container{
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    &__form{
+        width: 100%;
+        height: 154px;
+        display: flex;
+        @include utils.row-center;
+    }
+    &__in{
+        @include utils.flex-column;
+        margin: 0 25px;
+        label{
+            @include utils.nunito-12;
+            font-weight: 700;
+            color: utils.$var-green;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            &::placeholder{
+                @include utils.nunito-18;
+                font-weight:400;
+                color: utils.$var-black;
+            }
+        }
+    }
+    &__out{
+        @include utils.flex-column;
+        margin: 0 25px;
+        label{
+            @include utils.nunito-12;
+            font-weight: 700;
+            color: utils.$var-green;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            &::placeholder{
+                @include utils.nunito-18;
+                font-weight:400;
+                color: utils.$var-black;
+            }
+        }
+    }
+    &__room1{
+        @include utils.flex-column;
+        margin: 0 25px;
+        width: 170px;
+        position: relative;
+        label{
+            @include utils.nunito-12;
+            font-weight: 700;
+            color: utils.$var-green;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        select{
+            width: 120px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            appearance: none;
+            @include utils.nunito-18;
+            font-weight:400;
+            color: utils.$var-black;
+            option{
+                width: 150px;
+                
+            }
+        }
+        i{
+            position: absolute;
+            right: 50px;
+        }
+    }
+    &__room2{
+        @include utils.flex-column;
+        margin: 0 25px;
+        width: 170px;
+        position: relative;
+        label{
+            @include utils.nunito-12;
+            font-weight: 700;
+            color: utils.$var-green;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        i{
+            position: absolute;
+            right: 55px;
+        }
+        select{
+            width: 120px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            appearance: none;
+            @include utils.nunito-18;
+            font-weight:400;
+            color: utils.$var-black;
+            option{
+                width: 150px;
+            }
+        }
+        
+
+    }
+    &__button{
+        @include utils.column-center;
+        width: 200px;
+        height: 154px;
+        background-color: utils.$var-green;
+        transition: .3s all;
+        cursor: pointer;
+        &:hover{
+            color: utils.$var-white;
+            background-color: utils.$var-black;
+            
+        }
+    }
+    &__btn{
+        @include utils.column-center;
+        text-decoration: none;
+        color: utils.$var-white;
+        
+        span{
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            @include utils.nunito-16;
+            font-weight: 400;
+        }
+        small{
+            @include utils.nunito-12;
+            font-weight: 400;
+        }
+
+    }
+   
+}
+
+
+
+/* End of Check */
+
+/* Hotel Service */
+.hotel{
+    width: 100%; 
+    background-color: utils.$var-white;
+    margin-bottom: 120px;
+    .container{
+        max-width: 1170px;
+        padding: 25px 15px;
+        margin: 0 auto;
+    }
+    &__description{
+        @include utils.column-center;
+    }
+    &__subheading{
+        @include utils.nunito-13;
+        font-weight: 700;
+        color: utils.$var-green;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+    }
+    &__title{
+        @include utils.nunito-38;
+        font-weight: 700;
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+    &__cards{
+        width: 100%;
+        @include utils.row-center;
+        
+    }
+    &__card{
+        position: relative;
+        width: 215px;
+        margin: 0 15px;
+        @include utils.column-center;
+
+    }
+    &__card-icon{
+        position: relative;
+        z-index: 24;
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        background: utils.$var-white;
+        border-radius: 50%;
+        transition: all .3s ease;
+        box-shadow:  0 -4px 15px -15px rgb(0 0 0 / 42%);
+        @include utils.column-center;
+        i{
+            font-size: 54px;
+            color: utils.$var-green;
+            margin: 0;
+        }
+    }
+    &__card-name{
+        position: absolute;
+        top: 50px;
+        width:215px;
+        height: 130px;
+        padding: 30px 0;
+        background-color: utils.$var-white3;
+        @include utils.column-center;
+        transition: all .3s ease;
+        &:hover{
+            background-color: utils.$var-green;
+            color:utils.$var-white; 
+        }
+
+    }
+    &__card-subtitle{
+        @include utils.nunito-20;
+        padding-top: 25px;
+        margin-bottom: 16px;
+
+    }
+}
+
+
+
+/* End of Hotel Service */
+
+
+/* About */
+
+.about{
+    background-color: utils.$var-white;
+    width: 100%;
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__inner{
+        @include utils.row-center;
+    }
+    /* right */
+    &__right{
+        @include utils.row-center;
+    }
+    &__right-img{
+        width:300px;
+        height: 537px;
+        margin: 0 8px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    /* End of Right */
+
+    /* Left */
+    &__left{
+        width: 414px;
+        @include utils.column-flex-start;
+        padding-right: 35px;
+    }
+    &__subheading{
+        @include utils.nunito-13;
+        letter-spacing: 2px;
+        color: utils.$var-green;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    &__title{
+        @include utils.nunito-38;
+        color: utils.$var-black;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+    &__description{
+        @include utils.nunito-16;
+        line-height: 1.8;
+        color: utils.$var-gray;
+        margin-bottom: 16px;
+    }
+
+    &__left-button{
+        @include utils.row-center;
+        width: 204px;
+        height: 38px;
+        background-color: utils.$var-blue;
+        border-radius: 5px;
+        transition: .3s all ease;
+        cursor: pointer;
+        &:hover{
+            background-color: utils.$var-white;
+            border: 1px solid utils.$var-blue;
+        }
+    }
+    &__left-btn{
+        @include utils.nunito-16;
+        text-decoration: none;
+        color: utils.$var-white;
+        padding: 12px 6px;
+        &:hover{
+            
+            color: utils.$var-blue;
+        }
+    }
+
+    /* End of Left */
+}
+
+
+
+/* End of About */
+
+
+
+
+
+body{
+    height: 1500vh;
+}
+

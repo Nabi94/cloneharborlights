@@ -58,6 +58,11 @@
     font-size: 38px;
     
 }
+@mixin nunito-81-96 {
+    font-family: var.$nunito;
+    font-size: 81.96px;
+    
+}
 @mixin nunito-115-2 {
     font-family: var.$nunito;
     font-size: 115.2px;
@@ -140,6 +145,18 @@
 @mixin row-wrap{
     display: flex;
     flex-flow: row wrap;
+}
+@mixin column-flex-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+@mixin column-flex-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 @mixin for-drop{

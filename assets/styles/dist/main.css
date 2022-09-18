@@ -383,6 +383,10 @@ template {
   src: url("../../fonts/Nunito_Sans/NunitoSans-Black.ttf");
   font-weight: 900;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /* Normalize for site */
 /* Reset for Site */
 /* Fonts from google fonts or other sites */
@@ -398,10 +402,808 @@ template {
 /* End of Font-size */
 /* Flex-box */
 /* End of Flex-box */
-.mysalam {
+/* Header */
+.header {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.header .container {
+  max-width: 1140px;
+  height: 70px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 24px;
+}
+.header__logo-link span {
+  color: #f5e4c3;
+}
+
+/* End of Header */
+/* Navigation */
+.header {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.header__nav-item {
+  padding: 14.4px 20px;
+  list-style-type: none;
+}
+.header__nav-link {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+.active {
+  color: #21cc7a;
+}
+
+.active2 {
+  background-color: #ffffff;
+  position: fixed;
+  color: #000000 !important;
+  top: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+/* End of Navigation */
+/* Slider Hero */
+.slider .swiper {
+  width: 100%;
+  height: 800px;
+}
+.slider .swiper-img {
+  background-image: url("../../images/xbg_1.jpg.pagespeed.ic.54ihelhogj.webp");
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.slider .swiper-img2 {
+  background-image: url("../../images/xbg_2.jpg.pagespeed.ic.cOwhRzE9dH.webp");
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.slider .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #2f89fc;
+  opacity: 0.6;
+}
+.slider .container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.slider__text {
+  width: 555px;
+  height: 580px;
+  position: relative;
+  top: 150px;
+  z-index: 22;
+}
+.slider__text h2 {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #f5e4c3;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.slider__text h1 {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 115.2px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+}
+
+/* End of Hero */
+/* Check */
+.check {
+  width: 100%;
+  height: 154px;
+  background: #fafafa;
+}
+.check .container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.check__form {
+  width: 100%;
+  height: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.check__in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px;
+}
+.check__in label {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #21cc7a;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.check__in input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.check__in input::-webkit-input-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__in input::-moz-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__in input:-ms-input-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__in input::-ms-input-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__in input::placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px;
+}
+.check__out label {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #21cc7a;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.check__out input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.check__out input::-webkit-input-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__out input::-moz-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__out input:-ms-input-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__out input::-ms-input-placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__out input::placeholder {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__room1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px;
+  width: 170px;
+  position: relative;
+}
+.check__room1 label {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #21cc7a;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.check__room1 select {
+  width: 120px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__room1 select option {
+  width: 150px;
+}
+.check__room1 i {
+  position: absolute;
+  right: 50px;
+}
+.check__room2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px;
+  width: 170px;
+  position: relative;
+}
+.check__room2 label {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #21cc7a;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.check__room2 i {
+  position: absolute;
+  right: 55px;
+}
+.check__room2 select {
+  width: 120px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.check__room2 select option {
+  width: 150px;
+}
+.check__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 154px;
+  background-color: #21cc7a;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.check__button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+.check__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+.check__btn span {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.check__btn small {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* End of Check */
+/* Hotel Service */
+.hotel {
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 120px;
+}
+.hotel .container {
+  max-width: 1170px;
+  padding: 25px 15px;
+  margin: 0 auto;
+}
+.hotel__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hotel__subheading {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #21cc7a;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.hotel__title {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.hotel__cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hotel__card {
+  position: relative;
+  width: 215px;
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hotel__card-icon {
+  position: relative;
+  z-index: 24;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  background: #ffffff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 -4px 15px -15px rgba(0, 0, 0, 0.42);
+          box-shadow: 0 -4px 15px -15px rgba(0, 0, 0, 0.42);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hotel__card-icon i {
+  font-size: 54px;
+  color: #21cc7a;
+  margin: 0;
+}
+.hotel__card-name {
+  position: absolute;
+  top: 50px;
+  width: 215px;
+  height: 130px;
+  padding: 30px 0;
+  background-color: #f8f9fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.hotel__card-name:hover {
+  background-color: #21cc7a;
+  color: #ffffff;
+}
+.hotel__card-subtitle {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 20px;
+  padding-top: 25px;
+  margin-bottom: 16px;
+}
+
+/* End of Hotel Service */
+/* About */
+.about {
+  background-color: #ffffff;
+  width: 100%;
+  /* right */
+  /* End of Right */
+  /* Left */
+  /* End of Left */
+}
+.about .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__right-img {
+  width: 300px;
+  height: 537px;
+  margin: 0 8px;
+}
+.about__right-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__left {
+  width: 414px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 35px;
+}
+.about__subheading {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #21cc7a;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.about__title {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 38px;
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.about__description {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #999999;
+  margin-bottom: 16px;
+}
+.about__left-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 204px;
+  height: 38px;
+  background-color: #2f89fc;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.about__left-button:hover {
+  background-color: #ffffff;
+  border: 1px solid #2f89fc;
+}
+.about__left-btn {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 6px;
+}
+.about__left-btn:hover {
   color: #2f89fc;
 }
 
+/* End of About */
+body {
+  height: 1500vh;
+}
+
+#ftco-loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  z-index: 1000;
+}
+
+#ftco-loader.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+          transform: none;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#ftco-loader.show {
+  -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+#ftco-loader .circular {
+  -webkit-animation: loader-rotate 2s linear infinite;
+          animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#ftco-loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
+          animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px;
+  }
+}
+@keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px;
+  }
+}
 /* FOLDER STRUCTURE */
 /* Normalize,Reset,Typography,Utilities */
 /* Animations,Buttons,Card,Carousel,Cover,Dropdown,Form,Slider,Tables,Tooltips, */
@@ -410,7 +1212,4 @@ template {
 /* Admin,Theme */
 /* Colors,Fonts,Media,Mixins,Placeholders,Variables,Z-index */
 /* Bootstrap,FontAwesome,Jquery-UI */
-/* End of FOLDER STRUCTURE */
-li {
-  color: red;
-}/*# sourceMappingURL=main.css.map */
+/* End of FOLDER STRUCTURE *//*# sourceMappingURL=main.css.map */
