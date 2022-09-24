@@ -481,8 +481,221 @@ html {
 }
 
 /* End of Navigation */
+/* Restaurant */
+.restaurant {
+  width: 100%;
+  padding-bottom: 70px;
+  background-color: #fafafa;
+  /* Header */
+  /* End of Header */
+  /* Cards */
+  /* End of Cards */
+}
+.restaurant .container {
+  max-width: 1170px;
+  padding: 50px 15px;
+  margin: 0 auto;
+}
+.restaurant__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+}
+.restaurant__subtitle {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #21cc7a;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.restaurant__title {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 38px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.restaurant__cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.restaurant__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 33.333333%;
+      flex-basis: 33.333333%;
+  padding: 0 15px;
+  margin: 15px 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.restaurant__card:hover .restaurant__card-inner {
+  background-color: #2f89fc;
+}
+.restaurant__card:hover .restaurant__card-name {
+  color: #ffffff;
+}
+.restaurant__card:hover .restaurant__card-price {
+  color: #ffffff;
+}
+.restaurant__card-img {
+  width: 180px;
+  height: 160px;
+}
+.restaurant__card-picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant__card-inner {
+  width: 418px;
+  background-color: #ffffff;
+}
+.restaurant__card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 160px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 15px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.restaurant__card-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+.restaurant__card-name {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.restaurant__card-price {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 20px;
+  color: #2f89fc;
+  font-weight: 600;
+}
+.restaurant__card-description {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+.restaurant__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 132px;
+  height: 38px;
+  background-color: #21cc7a;
+  border-radius: 4px;
+  border: 1px solid #21cc7a;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.restaurant__btn:hover {
+  background-color: #f8f9fa;
+  border: 1px solid #21cc7a;
+}
+.restaurant__btn:hover {
+  background-color: #f8f9fa;
+}
+.restaurant__btn:hover .restaurant__button {
+  color: #21cc7a;
+}
+.restaurant__center {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.restaurant__button {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* End of Restaurant */
 /* Slider Hero */
-.slider .swiper {
+.slider .swiper1 {
   width: 100%;
   height: 800px;
 }
@@ -829,7 +1042,7 @@ html {
 .hotel {
   width: 100%;
   background-color: #ffffff;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .hotel .container {
   max-width: 1170px;
@@ -885,8 +1098,8 @@ html {
 }
 .hotel__card {
   position: relative;
-  width: 215px;
-  margin: 0 15px;
+  width: 15%;
+  margin: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,8 +1148,8 @@ html {
 .hotel__card-name {
   position: absolute;
   top: 50px;
-  width: 215px;
-  height: 130px;
+  width: 108%;
+  height: 126px;
   padding: 30px 0;
   background-color: #f8f9fa;
   display: -webkit-box;
@@ -962,7 +1175,7 @@ html {
 .hotel__card-subtitle {
   font-family: "Nunito sans", Arial, sans-serif;
   font-size: 20px;
-  padding-top: 25px;
+  padding-top: 56px;
   margin-bottom: 16px;
 }
 
@@ -1100,10 +1313,552 @@ html {
 }
 
 /* End of About */
-body {
-  height: 1500vh;
+/* End of Card */
+/*Testimony */
+.testimony {
+  width: 100%;
+  background-color: white;
+  /* Left */
+  /* End of Left */
+  /* Right */
+  /* Enf of Right */
+}
+.testimony .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.testimony__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.testimony__left {
+  position: relative;
+  width: 65%;
+}
+.testimony__left-img {
+  position: relative;
+  left: 31px;
+  display: block;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../images/xtestimony-img.jpg.pagespeed.ic.qJOG4K-Wk7.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.testimony__left-img::after {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  content: "";
+  width: 360%;
+  background: #2f89fc;
+}
+.testimony__right-subtitle {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #21cc7a;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.testimony__right-title {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 38px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.testimony__right {
+  width: 100%;
+  padding: 30px 0 0 78px;
+}
+.testimony__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 500px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimony__person-img {
+  width: 80px;
+  height: 80px;
+}
+.testimony__person-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.testimony__right-description {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #999999;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.testimony__person-info {
+  margin-left: 16px;
+}
+.testimony__person-name {
+  font-weight: 700;
+  color: #2f89fc;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 20px;
+}
+.testimony__person-job {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3019607843);
+  font-weight: 700;
+}
+.testimony .swiper-two {
+  width: 600px;
+  height: 300px;
 }
 
+/* End of Testimony */
+/* Hotel Rooms */
+.room {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 96px;
+  position: relative;
+  /* Header */
+  /* End of Header */
+  /* Cards */
+  /* End of Cards */
+}
+.room .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.room__header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 48px;
+}
+.room__header-subtitle {
+  margin-bottom: 5px;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #21cc7a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.room__header-title {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  color: #000000;
+}
+.room__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.room__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 33.333333%;
+      flex-basis: 33.333333%;
+}
+.room__card-img {
+  width: 476px;
+  height: 360px;
+}
+.room__card_picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.room__card-about {
+  background-color: #ffffff;
+  width: 476px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 360px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.room__card-about:hover {
+  background-color: #2f89fc;
+}
+.room__card-about:hover .room__card-name {
+  color: #ffffff;
+}
+.room__card-about:hover .room__card-dollar {
+  color: #ffffff;
+}
+.room__card-about:hover .room__card-star {
+  color: #ffffff;
+}
+.room__card-about:hover .fa-star {
+  color: #ffffff;
+}
+.room__card-about:hover .room__card-day {
+  color: #ffffff;
+}
+.room__card-about .fa-star {
+  font-size: 12px;
+  color: #2f89fc;
+  margin: 0 5px 5px 0;
+}
+.room__card-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.8;
+}
+.room__card-dollar {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 26px;
+  color: #2f89fc;
+  margin-right: 4px;
+}
+.room__card-day {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+.room__card-name {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+.room__card-button {
+  background-color: #ffffff;
+  width: 146px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.room__card-button a {
+  text-decoration: none;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+.room__card-button a i {
+  font-size: 12px;
+}
+.room .row-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+}
+
+/* End of Hotel Rooms */
+/* Restaurant */
+.restaurant {
+  width: 100%;
+  padding-bottom: 70px;
+  background-color: #fafafa;
+  /* Header */
+  /* End of Header */
+  /* Cards */
+  /* End of Cards */
+}
+.restaurant .container {
+  max-width: 1170px;
+  padding: 50px 15px;
+  margin: 0 auto;
+}
+.restaurant__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+}
+.restaurant__subtitle {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #21cc7a;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.restaurant__title {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 38px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.restaurant__cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.restaurant__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 33.333333%;
+      flex-basis: 33.333333%;
+  padding: 0 15px;
+  margin: 15px 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.restaurant__card:hover .restaurant__card-inner {
+  background-color: #2f89fc;
+}
+.restaurant__card:hover .restaurant__card-name {
+  color: #ffffff;
+}
+.restaurant__card:hover .restaurant__card-price {
+  color: #ffffff;
+}
+.restaurant__card-img {
+  width: 180px;
+  height: 160px;
+}
+.restaurant__card-picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant__card-inner {
+  width: 418px;
+  background-color: #ffffff;
+}
+.restaurant__card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 160px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 15px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.restaurant__card-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+.restaurant__card-name {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.restaurant__card-price {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 20px;
+  color: #2f89fc;
+  font-weight: 600;
+}
+.restaurant__card-description {
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+.restaurant__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 132px;
+  height: 38px;
+  background-color: #21cc7a;
+  border-radius: 4px;
+  border: 1px solid #21cc7a;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.restaurant__btn:hover {
+  background-color: #f8f9fa;
+  border: 1px solid #21cc7a;
+}
+.restaurant__btn:hover {
+  background-color: #f8f9fa;
+}
+.restaurant__btn:hover .restaurant__button {
+  color: #21cc7a;
+}
+.restaurant__center {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.restaurant__button {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Nunito sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* End of Restaurant */
+body {
+  height: 1500vh;
+  background-color: red;
+}
+
+/* Testimony */
 #ftco-loader {
   position: fixed;
   width: 96px;

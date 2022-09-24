@@ -158,6 +158,12 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+@mixin column-flex-startCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 @mixin for-drop{
     display: flex;

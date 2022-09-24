@@ -1,411 +1,830 @@
 @use "../utils/" as utils;
 
 /* Slider Hero */
-.slider{
-    .swiper{
-        width: 100%;
-        height: 800px;
-    }
-   
-    .swiper-img{
-        background-image: url('../../images/xbg_1.jpg.pagespeed.ic.54ihelhogj.webp');
-        height: 800px;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        
-    }
-    .swiper-img2{
-        background-image: url('../../images/xbg_2.jpg.pagespeed.ic.cOwhRzE9dH.webp');
-        height: 800px;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        
-    }
-    .overlay{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: utils.$var-blue;
-        opacity: .6;
+.slider {
+  .swiper1 {
+    width: 100%;
+    height: 800px;
+  }
 
-    }
-    .container{
-        max-width: 1170px;
-        padding: 0 15px;
-        margin: 0 auto;
-        @include utils.column-flex-end;
-    }
-    &__text{
-        width: 555px;
-        height: 580px;
-        position: relative;
-        top: 150px;
-        z-index: 22;
+  .swiper-img {
+    background-image: url("../../images/xbg_1.jpg.pagespeed.ic.54ihelhogj.webp");
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .swiper-img2 {
+    background-image: url("../../images/xbg_2.jpg.pagespeed.ic.cOwhRzE9dH.webp");
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: utils.$var-blue;
+    opacity: 0.6;
+  }
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include utils.column-flex-end;
+  }
+  &__text {
+    width: 555px;
+    height: 580px;
+    position: relative;
+    top: 150px;
+    z-index: 22;
 
-        h2{
-            @include utils.nunito-16;
-            color: utils.$var-yellow;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        }
-        h1{
-            @include utils.nunito-115-2;
-            font-weight: 700;
-            color: utils.$var-white;
-            margin: 0;
-            line-height: 1;
-        }
-
+    h2 {
+      @include utils.nunito-16;
+      color: utils.$var-yellow;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4px;
     }
-    
+    h1 {
+      @include utils.nunito-115-2;
+      font-weight: 700;
+      color: utils.$var-white;
+      margin: 0;
+      line-height: 1;
+    }
+  }
 }
-
-
 
 /* End of Hero */
 
-
 /* Check */
-.check{
+.check {
+  width: 100%;
+  height: 154px;
+  background: utils.$var-white2;
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__form {
     width: 100%;
     height: 154px;
-    background: utils.$var-white2;
-    .container{
-        max-width: 1170px;
-        padding: 0 15px;
-        margin: 0 auto;
+    display: flex;
+    @include utils.row-center;
+  }
+  &__in {
+    @include utils.flex-column;
+    margin: 0 25px;
+    label {
+      @include utils.nunito-12;
+      font-weight: 700;
+      color: utils.$var-green;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
-    &__form{
-        width: 100%;
-        height: 154px;
-        display: flex;
-        @include utils.row-center;
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      &::placeholder {
+        @include utils.nunito-18;
+        font-weight: 400;
+        color: utils.$var-black;
+      }
     }
-    &__in{
-        @include utils.flex-column;
-        margin: 0 25px;
-        label{
-            @include utils.nunito-12;
-            font-weight: 700;
-            color: utils.$var-green;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        input{
-            border: none;
-            outline: none;
-            background-color: transparent;
-            &::placeholder{
-                @include utils.nunito-18;
-                font-weight:400;
-                color: utils.$var-black;
-            }
-        }
+  }
+  &__out {
+    @include utils.flex-column;
+    margin: 0 25px;
+    label {
+      @include utils.nunito-12;
+      font-weight: 700;
+      color: utils.$var-green;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
-    &__out{
-        @include utils.flex-column;
-        margin: 0 25px;
-        label{
-            @include utils.nunito-12;
-            font-weight: 700;
-            color: utils.$var-green;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        input{
-            border: none;
-            outline: none;
-            background-color: transparent;
-            &::placeholder{
-                @include utils.nunito-18;
-                font-weight:400;
-                color: utils.$var-black;
-            }
-        }
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      &::placeholder {
+        @include utils.nunito-18;
+        font-weight: 400;
+        color: utils.$var-black;
+      }
     }
-    &__room1{
-        @include utils.flex-column;
-        margin: 0 25px;
-        width: 170px;
-        position: relative;
-        label{
-            @include utils.nunito-12;
-            font-weight: 700;
-            color: utils.$var-green;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        select{
-            width: 120px;
-            border: none;
-            outline: none;
-            background-color: transparent;
-            appearance: none;
-            @include utils.nunito-18;
-            font-weight:400;
-            color: utils.$var-black;
-            option{
-                width: 150px;
-                
-            }
-        }
-        i{
-            position: absolute;
-            right: 50px;
-        }
+  }
+  &__room1 {
+    @include utils.flex-column;
+    margin: 0 25px;
+    width: 170px;
+    position: relative;
+    label {
+      @include utils.nunito-12;
+      font-weight: 700;
+      color: utils.$var-green;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
-    &__room2{
-        @include utils.flex-column;
-        margin: 0 25px;
-        width: 170px;
-        position: relative;
-        label{
-            @include utils.nunito-12;
-            font-weight: 700;
-            color: utils.$var-green;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        i{
-            position: absolute;
-            right: 55px;
-        }
-        select{
-            width: 120px;
-            border: none;
-            outline: none;
-            background-color: transparent;
-            appearance: none;
-            @include utils.nunito-18;
-            font-weight:400;
-            color: utils.$var-black;
-            option{
-                width: 150px;
-            }
-        }
-        
+    select {
+      width: 120px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      appearance: none;
+      @include utils.nunito-18;
+      font-weight: 400;
+      color: utils.$var-black;
+      option {
+        width: 150px;
+      }
+    }
+    i {
+      position: absolute;
+      right: 50px;
+    }
+  }
+  &__room2 {
+    @include utils.flex-column;
+    margin: 0 25px;
+    width: 170px;
+    position: relative;
+    label {
+      @include utils.nunito-12;
+      font-weight: 700;
+      color: utils.$var-green;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    i {
+      position: absolute;
+      right: 55px;
+    }
+    select {
+      width: 120px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      appearance: none;
+      @include utils.nunito-18;
+      font-weight: 400;
+      color: utils.$var-black;
+      option {
+        width: 150px;
+      }
+    }
+  }
+  &__button {
+    @include utils.column-center;
+    width: 200px;
+    height: 154px;
+    background-color: utils.$var-green;
+    transition: 0.3s all;
+    cursor: pointer;
+    &:hover {
+      color: utils.$var-white;
+      background-color: utils.$var-black;
+    }
+  }
+  &__btn {
+    @include utils.column-center;
+    text-decoration: none;
+    color: utils.$var-white;
 
+    span {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      @include utils.nunito-16;
+      font-weight: 400;
     }
-    &__button{
-        @include utils.column-center;
-        width: 200px;
-        height: 154px;
-        background-color: utils.$var-green;
-        transition: .3s all;
-        cursor: pointer;
-        &:hover{
-            color: utils.$var-white;
-            background-color: utils.$var-black;
-            
-        }
+    small {
+      @include utils.nunito-12;
+      font-weight: 400;
     }
-    &__btn{
-        @include utils.column-center;
-        text-decoration: none;
-        color: utils.$var-white;
-        
-        span{
-            text-transform: uppercase;
-            margin-bottom: 5px;
-            @include utils.nunito-16;
-            font-weight: 400;
-        }
-        small{
-            @include utils.nunito-12;
-            font-weight: 400;
-        }
-
-    }
-   
+  }
 }
-
-
 
 /* End of Check */
 
 /* Hotel Service */
-.hotel{
-    width: 100%; 
-    background-color: utils.$var-white;
-    margin-bottom: 120px;
-    .container{
-        max-width: 1170px;
-        padding: 25px 15px;
-        margin: 0 auto;
+.hotel {
+  width: 100%;
+  background-color: utils.$var-white;
+  padding-bottom: 120px;
+  .container {
+    max-width: 1170px;
+    padding: 25px 15px;
+    margin: 0 auto;
+  }
+  
+  &__description {
+    @include utils.column-center;
+  }
+  &__subheading {
+    @include utils.nunito-13;
+    font-weight: 700;
+    color: utils.$var-green;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+  }
+  &__title {
+    @include utils.nunito-38;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  &__cards {
+    width: 100%;
+    @include utils.row-center;
+  }
+  &__card {
+    position: relative;
+    width: 15%;
+    margin: 0 20px;
+    @include utils.column-center;
+  }
+  &__card-icon {
+    position: relative;
+    z-index: 24;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    background: utils.$var-white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 -4px 15px -15px rgb(0 0 0 / 42%);
+    @include utils.column-center;
+    i {
+      font-size: 54px;
+      color: utils.$var-green;
+      margin: 0;
     }
-    &__description{
-        @include utils.column-center;
+  }
+  &__card-name {
+    position: absolute;
+    top: 50px;
+    width: 108%;
+    height: 126px;
+    padding: 30px 0;
+    background-color: utils.$var-white3;
+    @include utils.column-center;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: utils.$var-green;
+      color: utils.$var-white;
     }
-    &__subheading{
-        @include utils.nunito-13;
-        font-weight: 700;
-        color: utils.$var-green;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        letter-spacing: 2px;
-    }
-    &__title{
-        @include utils.nunito-38;
-        font-weight: 700;
-        margin-bottom: 24px;
-        line-height: 1.5;
-    }
-    &__cards{
-        width: 100%;
-        @include utils.row-center;
-        
-    }
-    &__card{
-        position: relative;
-        width: 215px;
-        margin: 0 15px;
-        @include utils.column-center;
-
-    }
-    &__card-icon{
-        position: relative;
-        z-index: 24;
-        width: 100px;
-        height: 100px;
-        margin: 0;
-        background: utils.$var-white;
-        border-radius: 50%;
-        transition: all .3s ease;
-        box-shadow:  0 -4px 15px -15px rgb(0 0 0 / 42%);
-        @include utils.column-center;
-        i{
-            font-size: 54px;
-            color: utils.$var-green;
-            margin: 0;
-        }
-    }
-    &__card-name{
-        position: absolute;
-        top: 50px;
-        width:215px;
-        height: 130px;
-        padding: 30px 0;
-        background-color: utils.$var-white3;
-        @include utils.column-center;
-        transition: all .3s ease;
-        &:hover{
-            background-color: utils.$var-green;
-            color:utils.$var-white; 
-        }
-
-    }
-    &__card-subtitle{
-        @include utils.nunito-20;
-        padding-top: 25px;
-        margin-bottom: 16px;
-
-    }
+  }
+  &__card-subtitle {
+    @include utils.nunito-20;
+    padding-top: 56px;
+    margin-bottom: 16px;
+  }
 }
-
-
 
 /* End of Hotel Service */
 
-
 /* About */
 
-.about{
-    background-color: utils.$var-white;
-    width: 100%;
-    .container{
-        max-width: 1170px;
-        margin: 0 auto;
-        padding: 0 15px;
+.about {
+  background-color: utils.$var-white;
+  width: 100%;
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__inner {
+    @include utils.row-center;
+  }
+  /* right */
+  &__right {
+    @include utils.row-center;
+  }
+  &__right-img {
+    width: 300px;
+    height: 537px;
+    margin: 0 8px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    &__inner{
-        @include utils.row-center;
-    }
-    /* right */
-    &__right{
-        @include utils.row-center;
-    }
-    &__right-img{
-        width:300px;
-        height: 537px;
-        margin: 0 8px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-    /* End of Right */
+  }
+  /* End of Right */
 
-    /* Left */
-    &__left{
-        width: 414px;
-        @include utils.column-flex-start;
-        padding-right: 35px;
-    }
-    &__subheading{
-        @include utils.nunito-13;
-        letter-spacing: 2px;
-        color: utils.$var-green;
-        font-weight: 700;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-    }
-    &__title{
-        @include utils.nunito-38;
-        color: utils.$var-black;
-        line-height: 1.5;
-        margin-bottom: 24px;
-    }
-    &__description{
-        @include utils.nunito-16;
-        line-height: 1.8;
-        color: utils.$var-gray;
-        margin-bottom: 16px;
-    }
+  /* Left */
+  &__left {
+    width: 414px;
+    @include utils.column-flex-start;
+    padding-right: 35px;
+  }
+  &__subheading {
+    @include utils.nunito-13;
+    letter-spacing: 2px;
+    color: utils.$var-green;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  &__title {
+    @include utils.nunito-38;
+    color: utils.$var-black;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  &__description {
+    @include utils.nunito-16;
+    line-height: 1.8;
+    color: utils.$var-gray;
+    margin-bottom: 16px;
+  }
 
-    &__left-button{
-        @include utils.row-center;
-        width: 204px;
-        height: 38px;
-        background-color: utils.$var-blue;
-        border-radius: 5px;
-        transition: .3s all ease;
-        cursor: pointer;
-        &:hover{
-            background-color: utils.$var-white;
-            border: 1px solid utils.$var-blue;
-        }
+  &__left-button {
+    @include utils.row-center;
+    width: 204px;
+    height: 38px;
+    background-color: utils.$var-blue;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    &:hover {
+      background-color: utils.$var-white;
+      border: 1px solid utils.$var-blue;
     }
-    &__left-btn{
-        @include utils.nunito-16;
-        text-decoration: none;
-        color: utils.$var-white;
-        padding: 12px 6px;
-        &:hover{
-            
-            color: utils.$var-blue;
-        }
+  }
+  &__left-btn {
+    @include utils.nunito-16;
+    text-decoration: none;
+    color: utils.$var-white;
+    padding: 12px 6px;
+    &:hover {
+      color: utils.$var-blue;
     }
+  }
 
-    /* End of Left */
+  /* End of Left */
 }
-
-
 
 /* End of About */
 
 
 
+  /* End of Card */
 
 
-body{
-    height: 1500vh;
+/*Testimony */
+
+.testimony {
+  width: 100%;
+  background-color: white;
+
+  .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+
+  &__inner {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+  }
+
+  /* Left */
+  &__left {
+      position: relative;
+      width: 65%;
+  }
+
+  &__left-img {
+      position: relative;
+      left: 31px;
+      display: block;
+      width: 100%;
+      height: 500px;
+      background-image: url('../../images/xtestimony-img.jpg.pagespeed.ic.qJOG4K-Wk7.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      &::after {
+          position: absolute;
+          top: 0;
+          right: 100%;
+          bottom: 0;
+          content: '';
+          width: 360%;
+          background: #2f89fc;
+      }
+  }
+  &__right-subtitle{
+    @include utils.nunito-13;
+    color: utils.$var-green;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &__right-title{
+    @include utils.nunito-38;
+    color: utils.$var-black;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  /* End of Left */
+
+  /* Right */
+  &__right{
+      width: 100%;
+      padding: 30px 0 0 78px;
+  }
+
+  &__person{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 500px;
+      height: 80px;
+      align-items: center; 
+  } 
+
+  &__person-img{
+      width: 80px;
+      height: 80px;
+
+      img{
+          
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+      }
+  }
+  &__right-description{
+    @include utils.nunito-16;
+    color: utils.$var-gray;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 24px;
+
+  }
+  &__person-info{
+    margin-left: 16px;
+  }
+  &__person-name{
+    font-weight: 700;
+    color: utils.$var-blue;
+    @include utils.nunito-20
+  }
+
+  &__person-job{
+    @include utils.nunito-12;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: utils.$var-opacity-black;
+    font-weight: 700;
+  }
+  /* Enf of Right */
+
+  .swiper-two{
+      width: 600px;
+      height: 300px;
+      
+  }
+  
+
+
 }
 
+/* End of Testimony */
+
+
+/* Hotel Rooms */
+.room {
+  width: 100%;
+  background-color: utils.$var-white;
+  padding-top: 96px;
+  position: relative;
+
+  .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+
+  /* Header */
+
+  &__header {
+      width: 100%;
+      height: 80px;
+      @include utils.column-center;
+      padding-bottom: 16px;
+      margin-bottom: 48px;
+  }
+
+  &__header-subtitle {
+      margin-bottom: 5px;
+      @include utils.nunito-13;
+      color: utils.$var-green;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+  }
+
+  &__header-title {
+      @include utils.nunito-38;
+      font-weight: 700;
+      margin-bottom: 32px;
+      line-height: 1.5;
+      color: utils.$var-black;
+  }
+
+  /* End of Header */
+
+
+  /* Cards */
+  &__cards {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  &__card {
+      display: flex;
+      flex-basis: 33.333333%;
+  }
+
+  &__card-img {
+      width: 476px;
+      height: 360px;
+  }
+
+  &__card_picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  &__card-about {
+      background-color: utils.$var-white;
+      width: 476px;
+      @include utils.column-center;
+      height: 360px;
+      transition: .3s all;
+      &:hover{
+          background-color: utils.$var-blue;
+          
+      }
+      &:hover .room__card-name{
+          color: utils.$var-white;
+      }
+      &:hover .room__card-dollar{
+          color: utils.$var-white;
+      }
+      &:hover .room__card-star{
+          color: utils.$var-white;
+      }
+      &:hover .fa-star{
+          color: utils.$var-white;
+      }
+      &:hover .room__card-day{
+          color: utils.$var-white;
+      }
+  
+
+
+      .fa-star {
+          font-size: 12px;
+          color: utils.$var-blue;
+          margin: 0 5px 5px 0;
+          
+      }
+
+  }
+  
+
+  &__card-price {
+      @include utils.row-center;
+      line-height: 1.8;
+
+  }
+
+  &__card-dollar {
+      @include utils.nunito-26;
+      color: utils.$var-blue;
+      margin-right: 4px;
+  }
+
+  &__card-day {
+      @include utils.nunito-14;
+      color: utils.$var-gray2;
+  }
+
+  &__card-name {
+      @include utils.nunito-30;
+      margin-bottom: 16px;
+      line-height: 1.8;
+     
+  }
+
+  &__card-button {
+      background-color: utils.$var-white;
+      width: 146px;
+      height: 48px;
+      @include utils.row-center;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      cursor: pointer;
+
+      a {
+          text-decoration: none;
+          @include utils.nunito-16;
+          color: utils.$var-black;
+
+          i {
+              font-size: 12px;
+          }
+      }
+  }
+
+  .row-reverse {
+      display: flex;
+      flex-direction: row-reverse !important;
+  }
+
+  /* End of Cards */
+
+
+}
+
+
+/* End of Hotel Rooms */
+/* Restaurant */
+.restaurant{
+  width: 100%;
+  padding-bottom: 70px ;
+  background-color: utils.$var-white2;
+  .container{
+      max-width: 1170px;
+      padding: 50px 15px;
+      margin: 0 auto;
+  }
+
+  /* Header */
+  &__header{
+      @include utils.column-center;
+      width: 100%;
+      height: 80px;
+      margin-bottom: 48px;
+      padding-bottom: 16px;
+  }
+  &__subtitle{
+      @include utils.nunito-13;
+      color: utils.$var-green;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+  }
+  &__title{
+      @include utils.nunito-38;
+      color: utils.$var-black;
+      font-weight: 700;
+      line-height: 1.5;
+  }
+
+  /* End of Header */
+  /* Cards */
+  &__cards{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      flex-wrap: wrap;
+      
+
+  }
+  &__card{
+      display: flex;
+      flex-direction: row;
+      flex-basis: 33.333333%;
+      padding: 0 15px;
+      margin: 15px 0;
+      transition: .3s all;
+      &:hover .restaurant__card-inner{
+          background-color: utils.$var-blue;
+      }
+      &:hover .restaurant__card-name{
+          color: utils.$var-white;
+      }
+      &:hover .restaurant__card-price{
+          color: utils.$var-white;
+      }
+      
+  }
+  &__card-img{
+      width:180px;
+      height: 160px;
+
+  }
+  &__card-picture{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  &__card-inner{
+      width: 418px;
+      background-color: utils.$var-white;
+  }
+  &__card-inner{
+      display: flex;
+      flex-direction: column;
+      height: 160px;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 15px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+  }
+  &__card-head{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+  }
+  &__card-name{
+      @include utils.nunito-20;
+      color: utils.$var-black;
+      line-height: 1.5;
+      font-weight: 500;
+  }
+
+  &__card-price{
+      @include utils.nunito-20;
+      color: utils.$var-blue;
+      font-weight: 600;
+  }
+  &__card-description{
+      @include utils.nunito-16;
+      color: utils.$var-gray;
+  }
+  &__btn{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 132px;
+      height: 38px;
+      background-color: utils.$var-green;
+      border-radius: 4px;
+      border: 1px solid utils.$var-green;
+      cursor: pointer;
+      transition: .3s all;
+      &:hover{
+          background-color: utils.$var-white3;
+          border: 1px solid utils.$var-green;
+      }
+      &:hover{
+          background-color: utils.$var-white3;
+      }
+      &:hover .restaurant__button{
+          color: utils.$var-green;
+      }
+  }
+  &__center{
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  &__button{
+      text-decoration: none;
+      color: utils.$var-white;
+      @include utils.nunito-16;
+  }
+
+
+  /* End of Cards */
+}
+/* End of Restaurant */
+
+body {
+  height: 1500vh;
+  background-color: red;
+}

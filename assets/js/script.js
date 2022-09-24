@@ -40,11 +40,11 @@ window.onscroll = function(){
 
 
 /* Swiper  */
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
-    speed:2500,
     loop: true,
+    speed:2500,
     autoplay:{
         delay:3000,
         duration:5000,
@@ -63,6 +63,25 @@ const swiper = new Swiper('.swiper', {
 
 
 /* End of Swiper */
+/* Swiper Testimony */
+
+
+const swiper2 = new Swiper('.swiper-two' , {
+  // Optional parameters
+  direction: 'horizontal',
+  
+  autoplay:{
+      delay:1500,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+/* End of Testimony */
+
+
 
 /* Date Popup */
 
