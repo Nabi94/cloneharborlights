@@ -1,3 +1,5 @@
+@use 'variables' as var;
+
 /* Breakpoints */
 @mixin laptop{
     @media screen and (max-width: map-get(var.$breakpoints,"laptop")){

@@ -27,6 +27,13 @@
 
         }
     }
+    &__burger{
+        display: none;
+        @include utils.tablet{
+            display: block;
+            
+        }
+    }
 }
 
 

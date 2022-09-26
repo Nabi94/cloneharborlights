@@ -1,1 +1,182 @@
 @use '../utils/' as utils;
+/* Footer */
+.footer{
+    width: 100%;
+    &__introduction{
+        background-image: url('../../images/xbg_4.jpg.pagespeed.ic.gv6CMeDCNV.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding:  0 15px;
+    }
+    &__overlay{
+        width: 100%;
+        height: 100vh;
+        background-color: utils.$var-blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        left: 0;
+        opacity: .9;
+        z-index: 150;
+    }
+    &__top{
+        width: 100%;
+        height: 50%;
+        @include utils.row-center;
+        position: relative;
+        z-index: 155;
+        padding-top: 150px;
+    }
+    /* First */
+    &__top-first{
+        width: 285px;
+        height: 330px;
+        padding: 0 15px;
+        
+
+    }
+    &__first-title{
+        @include utils.nunito-24;
+        color: utils.$var-white;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    &__first-description{
+        @include utils.nunito-16;
+        color: utils.$var-opacity-white ;
+        line-height: 1.8;
+        font-weight: 400;
+        margin-bottom: 40px;
+
+    }
+    &__first-social{
+        @include utils.row-start;
+        height: 80px;
+        width: 285px;
+    }
+    &__first-icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: utils.$var-blue;
+        margin: 0 10px;
+        @include utils.row-center;
+        cursor: pointer;
+        i{
+            color: utils.$var-white;
+            font-size: 24px;
+        }
+    }
+    /* End of First */
+    /* Twice */
+    &__top-twice{
+        width: 285px;
+        height: 330px;
+        margin-left: 48px;
+
+    }
+    &__twice-title{
+        @include utils.nunito-24;
+        color: utils.$var-white;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    &__twice-links{
+        @include utils.column-flex-start;
+    }
+    &__twice-link{
+        padding:8px 0 ;
+        @include utils.nunito-16;
+        color: utils.$var-opacity-white;
+        text-decoration: none;
+        font-weight: 400;
+        transition: all .3s ease;
+        &:hover{
+            color: utils.$var-white;
+        }
+        
+    }
+    
+    /* End of Twice */
+    /* Third */
+    &__top-third{
+        width: 285px;
+        height: 330px;
+    }
+    &__third-title{
+        @include utils.nunito-24;
+        color: utils.$var-white;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    &__third-links{
+        @include utils.column-flex-start;
+    }
+    &__third-link{
+        padding:8px 0 ;
+        @include utils.nunito-16;
+        color: utils.$var-opacity-white;
+        text-decoration: none;
+        font-weight: 400;
+        transition: all .3s ease;
+        &:hover{
+            color: utils.$var-white;
+        }
+
+    }
+    /* End of Third */
+    /* Four */
+    &__top-four{
+        width: 285px;
+        height: 330px;
+    }
+    &__four-title{
+        @include utils.nunito-24;
+        color: utils.$var-white;
+        margin-bottom: 40px;
+        font-weight: 700;
+
+    }
+    &__four-links{
+        @include utils.column-flex-start;
+    }
+    &__four-p{
+        padding:8px 0 ;
+        @include utils.nunito-16;
+        color: utils.$var-opacity-white;
+        text-decoration: none;
+        font-weight: 400;
+        transition: all .3s ease;
+        text-align: center;
+        &:hover{
+            color: utils.$var-white;
+        }
+        i{
+            margin-right: 15px;
+        }
+
+    }
+    /* End of Four */
+    /* Bottom */
+    &__bottom{
+        position: relative;
+        z-index: 155;
+        @include utils.row-center;
+        @include utils.nunito-16;
+        color: utils.$var-opacity-white;
+        i{
+            margin: 0 8px;
+        }
+    }
+    /* End of Bottom */
+}
+/* End of Footer */

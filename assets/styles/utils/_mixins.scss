@@ -114,14 +114,14 @@
 @mixin row-start{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-@mixin flex-col-start{
+@mixin col-start{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 @mixin flex-row{
@@ -172,3 +172,5 @@
     align-items: start;
 }
 /* End of Flex-box */
+
+

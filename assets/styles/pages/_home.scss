@@ -824,6 +824,234 @@
 }
 /* End of Restaurant */
 
+/* Read */
+
+.read{
+  width: 100%;
+  background-color: utils.$var-white;
+  padding: 120px 0;
+  .container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  /* Head */
+  &__head{
+      @include utils.column-center;
+      margin-bottom: 50px;
+  }
+  &__subtitle{
+      @include utils.nunito-13;
+      color: utils.$var-green;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+  }
+  &__title{
+      @include utils.nunito-38;
+      color: utils.$var-black;
+      font-weight: 700;
+      line-height: 1.5;
+  }
+
+
+  /* End of Head */
+  /* Card */
+
+  &__cards{
+      @include utils.row-center;
+  }
+  &__card{
+      width: 400px;
+      padding: 0 15px;
+  }
+  &__img{
+      width: 350px;
+      height: 250px;
+  }
+  &__picturea{
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+      border-radius: 4px;
+  }
+  &__inner{
+      width: 100%;
+      @include utils.column-center;
+      
+  }
+  &__inner-head{
+      margin: 15px 0 ;
+      cursor: pointer;
+      @include utils.row-center;
+      
+      p{
+          @include utils.nunito-13;
+          color: utils.$var-blue;
+          font-weight: 500;
+          
+      }
+  }
+  &__inner-comment{
+      @include utils.nunito-13;
+          color: utils.$var-blue;
+          font-weight: 500;
+          padding: 0 5px;
+          transition: .3s all;
+          &:hover{
+              color: utils.$var-gray;
+          }
+  }
+  &__inner-time{
+      padding: 0 5px;
+      &:hover{
+          color: utils.$var-gray;
+      }
+  }
+  &__inner-admin{
+      padding: 0 5px;
+      &:hover{
+          color: utils.$var-gray;
+      }
+  }
+  .fa-message{
+      color: utils.$var-blue;
+      padding: 0 5px;
+      &:hover{
+          color: utils.$var-gray;
+      }
+  }
+  &__inner-bottom{
+      margin-top: 15px;
+      @include utils.row-center;
+      width: 100%;
+      height: 20px;
+  }
+  &__inner-description{
+      text-align: center;
+      @include utils.nunito-20;
+      color: utils.$var-black;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: .3s all;
+      cursor: pointer;
+      &:hover{
+          color: utils.$var-green;
+      }
+  }
+  /* End of Card */
+}
+/* End of Read */
+
+/* Instagram */
+
+.instagram{
+  width: 100%;
+  background-color: utils.$var-white;
+  .container{
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+  /* Head */
+  &__head{
+      @include utils.column-center;
+      padding: 40px 0;
+  }
+  &__head-subtitle{
+      @include utils.nunito-13;
+      color: utils.$var-green;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+  }
+  &__head-title{
+      @include utils.nunito-30;
+      font-weight: 700;
+      color: utils.$var-black;
+      line-height: 1.5;
+      padding-bottom: 15px;
+  }
+  /* End of Head */
+  /* Image */
+  &__images{
+      @include utils.flex-row;
+
+  }
+  &__img{
+      width: 381px;
+      height: 280px;
+      position: relative;
+      cursor: zoom-in;
+      transition: all .3s  ease;
+      &:hover .fa-instagram{
+          display: block;
+          transition: all .3s  ease;
+      }
+      &:hover .instagram__icon{
+          background-color: utils.$var-blue;
+          opacity: .8;
+          transition: all .3s  ease;
+      }
+      
+  }
+  &__picture{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  &__icon{
+      width: 381px;
+      height: 280px;
+      @include utils.row-center;
+      position: absolute;
+      bottom: 0;
+  }
+  .fa-instagram{
+      font-size: 40px;
+      color: utils.$var-white;
+      display: none;
+      
+  }
+  &__popup{
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.9);
+      height: 100%;
+      width: 100%;
+      z-index: 100;
+      display: none;
+      img{
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%,50%);
+          border: 5px solid utils.$var-white;
+          border-radius: 5px;
+          width: 750px;
+          object-fit: cover;
+      }
+      span{
+          position: absolute;
+          top: 50px;
+          right: 10px;
+          font-size: 60px;
+          font-weight: bolder;
+          color: utils.$var-white;
+          cursor: pointer;
+          z-index: 100;
+      }
+  }
+  /* End of Image */
+
+
+}
+
+/* End of Instagram  */
 body {
   height: 1500vh;
   background-color: red;

@@ -88,3 +88,17 @@ const swiper2 = new Swiper('.swiper-two' , {
 flatpickr("input[type=text]", {});
 
 /* End of Popup */
+
+
+/* Open Images */
+document.querySelectorAll('.instagram__images').forEach(image=>{
+  image.onclick = () =>{
+    querySelector('.instagram__popup').style.display="block";
+    querySelector('.instagram__popup img').src=image.getAttribute('src');
+    console.log("salam");
+    
+  };
+});
+
+
+/* End of Open Images */
